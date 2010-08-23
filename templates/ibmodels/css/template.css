@@ -13,7 +13,7 @@ form {
 }
 
 body {
-	font-family: Helvetica,Arial,sans-serif;
+	font-family: BonvenoCFLight,Helvetica,Arial,sans-serif;
 	line-height: 1.3em;
 	margin: 0px 0px 0px 0px;
 	font-size: 12px;
@@ -39,3 +39,47 @@ img { border: 0 none; }
 /*****************************************/
 /*** Template specific layout elements ***/
 /*****************************************/
+
+body {
+background:#ffffff url('../images/fundo.jpg') no-repeat center center;
+	
+}
+
+#main {
+	width: 960px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+#title h2{
+
+	font-size: 5em;
+color: black;
+
+}
+
+#mainmenu {
+	
+	background-color: #ffffff;
+	font-size: large;
+	text-transform: uppercase;
+	padding: 5px;
+	margin: 180px 0px 0px 90px;
+	width: 7em;
+	height: 16em;
+	
+
+	
+}
+
+.menu li{
+	
+	margin-top: 10px;
+}
+
+.menu a{
+	color: black;
+}

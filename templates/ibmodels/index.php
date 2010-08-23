@@ -17,10 +17,12 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 <head>
 <jdoc:include type="head" />
 
+<link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/ibmodels/css/fonts/stylesheet.css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/ibmodels/css/reset.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/ibmodels/css/template.css" type="text/css" />
+<script src="<?php echo $this->baseurl ?>/templates/ibmodels/js/ibm_scripts.js" language="Javascript"></script>
 
 <!--[if lte IE 6]>
 <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ieonly.css" rel="stylesheet" type="text/css" />
@@ -30,65 +32,21 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 <?php endif; ?>
 
 </head>
-<body id="page_bg" class="color_<?php echo $this->params->get('colorVariation'); ?> bg_<?php echo $this->params->get('backgroundVariation'); ?> width_<?php echo $this->params->get('widthStyle'); ?>">
-<a name="up" id="up"></a>
-<div class="center" align="center">
-	<div id="wrapper">
-		<div id="wrapper_r">
-			<div id="header">
-				<div id="header_l">
-					<div id="header_r">
-						<div id="logo"></div>
-						<jdoc:include type="modules" name="top" />
-					</div>
-				</div>
-			</div>
+<body>
 
-			<div id="tabarea">
-				<div id="tabarea_l">
-					<div id="tabarea_r">
-						<div id="tabmenu">
-						<table cellpadding="0" cellspacing="0" class="pill">
-							<tr>
-								<td class="pill_l">&nbsp;</td>
-								<td class="pill_m">
-								<div id="pillmenu">
-									<jdoc:include type="modules" name="user3" />
-								</div>
-								</td>
-								<td class="pill_r">&nbsp;</td>
-							</tr>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
 
-			<div id="search">
-				<jdoc:include type="modules" name="user4" />
-			</div>
+<div id="main">
 
-			<div id="pathway">
-				<jdoc:include type="modules" name="breadcrumb" />
-			</div>
-
-			<div class="clr"></div>
-
-			<div id="whitebox">
-				<div id="whitebox_t">
-					<div id="whitebox_tl">
-						<div id="whitebox_tr"></div>
-					</div>
-				</div>
-
-				<div id="whitebox_m">
-					<div id="area">
-									<jdoc:include type="message" />
-
-						<div id="leftcolumn">
-						<?php if($this->countModules('left')) : ?>
-							<jdoc:include type="modules" name="left" style="rounded" />
+<a id="title" href="index.php"><h2>IBMODELS</h2></a>
+<div id="mainmenu">
+						
+						
+						
+						<?php if($this->countModules('menu')) : ?>
+							<jdoc:include type="modules" name="menu" style="rounded" />
 						<?php endif; ?>
+					
+						
 						</div>
 
 						<?php if($this->countModules('left')) : ?>
@@ -163,5 +121,6 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 </div>
 <jdoc:include type="modules" name="debug" />
 
+</div>
 </body>
 </html>

@@ -63,17 +63,10 @@
 		<filename>css/ieonly.css</filename>
 	</files>
 	<positions>
-		<position>breadcrumb</position>
-		<position>left</position>
-		<position>right</position>
-		<position>top</position>
-		<position>user1</position>
-		<position>user2</position>
-		<position>user3</position>
-		<position>user4</position>
+	
+		<position>menu</position>
+		<position>user</position>
 		<position>footer</position>
-		<position>debug</position>
-		<position>syndicate</position>
 	</positions>
 	<params>
 		<param name="colorVariation" type="list" default="white" label="Color Variation" description="Color variation to use">
