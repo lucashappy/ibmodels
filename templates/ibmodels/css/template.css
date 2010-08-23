@@ -1,0 +1,41 @@
+/*****************************/
+/*** Core html setup stuff ***/
+/*****************************/
+
+html {
+  height: 100%;
+  margin-bottom: 1px;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	line-height: 1.3em;
+	margin: 0px 0px 0px 0px;
+	font-size: 12px;
+	color: #333;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	font-weight: normal;
+}
+
+a:hover {
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+input.button { cursor: pointer; }
+
+p { margin-top: 0; margin-bottom: 5px; }
+
+img { border: 0 none; }
+
+/*****************************************/
+/*** Template specific layout elements ***/
+/*****************************************/
