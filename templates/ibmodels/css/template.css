@@ -56,8 +56,9 @@ background:#ffffff url('../images/fundo.jpg') repeat-x center center;
 
 #title h2{
 
-	font-size: 5em;
-color: black;
+	font-size: 4em;
+        color: black;
+	margin-top:35px;
 
 }
 
@@ -67,7 +68,7 @@ color: black;
 	font-size: large;
 	text-transform: uppercase;
 	padding: 5px;
-	margin: 180px 0px 0px 90px;
+	margin: 110px 0px 0px 90px;
 	width: 7em;
 	height: 16em;
 	
