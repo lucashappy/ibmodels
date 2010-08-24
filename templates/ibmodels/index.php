@@ -20,7 +20,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/ibmodels/css/fonts/stylesheet.css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/ibmodels/css/reset.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/ibmodels/css/reseta.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/ibmodels/css/template.css" type="text/css" />
 <script src="<?php echo $this->baseurl ?>/templates/ibmodels/js/ibm_scripts.js" language="Javascript"></script>
 

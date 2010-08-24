@@ -41,7 +41,7 @@ img { border: 0 none; }
 /*****************************************/
 
 body {
-background:#ffffff url('../images/fundo.jpg') no-repeat center center;
+background:#ffffff url('../images/fundo.jpg') repeat-x center center;
 	
 }
 
