@@ -56,9 +56,8 @@ background:#ffffff url('../images/fundo.jpg') repeat-x center center;
 
 #title h2{
 
-	font-size: 4em;
-        color: black;
-	margin-top:35px;
+	font-size: 5em;
+color: black;
 
 }
 
@@ -66,9 +65,10 @@ background:#ffffff url('../images/fundo.jpg') repeat-x center center;
 	
 	background-color: #ffffff;
 	font-size: large;
+	position: absolute;
 	text-transform: uppercase;
 	padding: 5px;
-	margin: 110px 0px 0px 90px;
+	margin: 180px 0px 0px 90px; 
 	width: 7em;
 	height: 16em;
 	
@@ -84,3 +84,18 @@ background:#ffffff url('../images/fundo.jpg') repeat-x center center;
 .menu a{
 	color: black;
 }
+
+
+/*--------------------- Conteúdo -------------------------*/
+
+#conteudo {
+	background-color: black;
+
+	margin: auto 250px;
+	width: 540px;
+	height: 540px;
+	opacity: 0.7;
+	overflow:scroll;
+
+}
+ 

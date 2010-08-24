@@ -20,7 +20,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/ibmodels/css/fonts/stylesheet.css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/ibmodels/css/reseta.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/ibmodels/css/reset.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/ibmodels/css/template.css" type="text/css" />
 <script src="<?php echo $this->baseurl ?>/templates/ibmodels/js/ibm_scripts.js" language="Javascript"></script>
 
@@ -48,78 +48,9 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 					
 						
 						</div>
-
-						<?php if($this->countModules('left')) : ?>
-						<div id="maincolumn">
-						<?php else: ?>
-						<div id="maincolumn_full">
-						<?php endif; ?>
-							<?php if($this->countModules('user1 or user2')) : ?>
-								<table class="nopad user1user2">
-									<tr valign="top">
-										<?php if($this->countModules('user1')) : ?>
-											<td>
-												<jdoc:include type="modules" name="user1" style="xhtml" />
-											</td>
-										<?php endif; ?>
-										<?php if($this->countModules('user1 and user2')) : ?>
-											<td class="greyline">&nbsp;</td>
-										<?php endif; ?>
-										<?php if($this->countModules('user2')) : ?>
-											<td>
-												<jdoc:include type="modules" name="user2" style="xhtml" />
-											</td>
-										<?php endif; ?>
-									</tr>
-								</table>
-
-								<div id="maindivider"></div>
-							<?php endif; ?>
-
-							<table class="nopad">
-								<tr valign="top">
-									<td>
-										<jdoc:include type="component" />
-										<jdoc:include type="modules" name="footer" style="xhtml"/>
-									</td>
-									<?php if($this->countModules('right') and JRequest::getCmd('layout') != 'form') : ?>
-										<td class="greyline">&nbsp;</td>
-										<td width="170">
-											<jdoc:include type="modules" name="right" style="xhtml"/>
-										</td>
-									<?php endif; ?>
-								</tr>
-							</table>
-
-						</div>
-						<div class="clr"></div>
-					</div>
-					<div class="clr"></div>
-				</div>
-
-				<div id="whitebox_b">
-					<div id="whitebox_bl">
-						<div id="whitebox_br"></div>
-					</div>
-				</div>
-			</div>
-
-			<div id="footerspacer"></div>
+						<div id="conteudo">
+<jdoc:include type="component" />
 		</div>
-
-		<div id="footer">
-			<div id="footer_l">
-				<div id="footer_r">
-					<p id="syndicate">
-						<jdoc:include type="modules" name="syndicate" />
-					</p>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<jdoc:include type="modules" name="debug" />
 
 </div>
 </body>
