@@ -63,7 +63,7 @@ background:#ffffff url('../images/fundo.jpg') no-repeat center center;
 }
 
 #mainmenu {
-	
+	position: absolute;
 	background-color: #ffffff;
 	font-size: large;
 	text-transform: uppercase;
