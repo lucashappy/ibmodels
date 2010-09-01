@@ -22,7 +22,27 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/ibmodels/css/reset.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/ibmodels/css/template.css" type="text/css" />
-<script src="<?php echo $this->baseurl ?>/templates/ibmodels/js/ibm_scripts.js" language="Javascript"></script>
+<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/ibmodels/js/ibm_scripts.js" language="Javascript" ></script>
+
+
+
+<script type="text/javascript">
+
+</script>
+
+
+<?php
+//add the links to the external files into the head of the webpage (note the 'administrator' in the path, which is not nescessary if you are in the frontend)
+
+$document =& JFactory::getDocument();
+$document->addScript($this->baseurl.'/templates/ibmodels/js/jquery-1.4.2.js');
+//$document->addScript($this->baseurl.'/templates/ibmodels/js/mootools.js');
+//$document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.tools.min.js');
+$document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.scrollTo-1.4.2-min.js');
+$document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.serialScroll-1.2.2-min.js');
+//$document->addScript($this->baseurl.'/templates/ibmodels/js/init.js');
+
+?>
 
 <!--[if lte IE 6]>
 <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ieonly.css" rel="stylesheet" type="text/css" />
@@ -48,10 +68,34 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 					
 						
 						</div>
-						<div id="conteudo">
-<jdoc:include type="component" />
-		</div>
 
+
+<?php
+$menu = & JSite::getMenu();
+/*verifica se a pagina exibida não é a pagina principal*/
+if ($menu->getActive() != $menu->getDefault()) {
+ ?>
+     <div id="fundo_conteudo" class="hasTip2">
+    <div id="conteudo">
+             <jdoc:include type="component" /> 
+    </div>
 </div>
+</div>
+<div id="actions">
+	<a class="prev">&laquo; Subir</a>
+
+	<a class="next">Descer &raquo;</a>
+</div>
+<?  
+}
+?>
+
+
+
+
+<!-- javascript coding -->
+
+
+
 </body>
 </html>

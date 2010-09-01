@@ -46,56 +46,132 @@ background:#ffffff url('../images/fundo.jpg') repeat-x center center;
 }
 
 #main {
+	position:absolute;
 	width: 960px;
-
 	margin-left: auto;
 	margin-right: auto;
 
 }
 
-
 #title h2{
-
+	margin-top:20px;
 	font-size: 5em;
-color: black;
+        color: black;
 
 }
 
 #mainmenu {
-	position: absolute;
+	position:absolute;
 	background-color: #ffffff;
 	font-size: large;
-	position: absolute;
 	text-transform: uppercase;
 	padding: 5px;
-	margin: 180px 0px 0px 90px; 
+	margin: 120px 0px 0px 90px; 
 	width: 7em;
 	height: 16em;
-	
-
-	
+		
 }
 
 .menu li{
-	
 	margin-top: 10px;
 }
 
 .menu a{
 	color: black;
 }
+/*---------------------Itens de sub-menu -----------------*/
 
+.item10{
+	padding-left:18px !important;
+	font-size:14px !important;
+}
+.item11{
+	padding-left:18px !important;
+	font-size:14px !important;
+}
+.item12{
+	padding-left:18px !important;
+	font-size:14px !important;
+}
+.item13{
+	padding-left:18px !important;
+	font-size:14px !important;
+}
+/*--------------------------Titulo dos topicos ----------*/
+.componentheading{
+	font-size: 26px !important;
+	padding-top: 10px !important;
+	padding-bottom: 20px !important;
+}
+.contentheading{
+	font-size: 26px !important;
+	padding-top: 10px !important;
+	padding-bottom: 20px !important;
+}
 
+/*--lista de noticias--*/
+.contentpane{
+	font-size: 14px !important;
+}
+
+/*---link dentro de uma noticia para voltar pra lista de noticias ----*/
+.contentpaneopen span{
+      font-size: 16px !important;
+      padding-bottom: 20px !important;
+      float: right;
+ }
 /*--------------------- Conteúdo -------------------------*/
 
-#conteudo {
+#fundo_conteudo{
+	position:absolute;
 	background-color: black;
-
 	margin: auto 250px;
-	width: 540px;
-	height: 540px;
+	margin-top:50px !important;
+	width: 780px;
+	height: 440px;
 	opacity: 0.7;
-	overflow:scroll;
 
+}	
+
+#conteudo {
+	position:absolute;
+	width: 760px;
+	height: 440px;
+	font-family:Verdana,Arial,sans-serif;
+	color:white;
+	padding-left:10px;
+	padding-right:10px;
+	/*overflow-y:scroll;*/
+	overflow:hidden; 
+	text-align:justify;
 }
- 
+
+/*--------------------Scroll---------------------------------------*/
+
+/* the action buttons above the scrollable */
+#actions {
+        margin-left: 250px;
+	width: 780px;
+	position:absolute;
+	margin-top: 550px;
+}
+
+#actions a {
+	font-size:13px;		
+	cursor:pointer;
+	color:purple;
+}
+
+#actions a:hover {
+	text-decoration:underline;
+	color:#000;
+}
+
+.disabled {
+	visibility:hidden;		
+}
+
+.next {
+	float:right;
+}	
+
