@@ -20,10 +20,11 @@ class ModelsViewAll extends JView
 $document = JFactory::getDocument();
 $document->addStyleSheet(JURI::root().'components/com_models/assets/styles.css');
 $document->addScript(JURI::root().'components/com_models/assets/scripts.js');
-//$document->addScript(JURI::root().'components/com_models/assets/src/jquery-1.4.2.js');
+$document->addScript(JURI::root().'components/com_models/assets/src/jquery-1.4.2.js');
 $document->addScript(JURI::root().'components/com_models/assets/src/galleria.js');			
-	
-
+$document->addScript(JURI::root().'components/com_models/assets/src/themes/classic/galleria.classic.js');
+//$document->addScript(JURI::root().'components/com_models/assets/jd.gallery.js');
+//$document->addStyleSheet(JURI::root().'components/com_models/assets/jd.gallery.css');
 	//Galleria.loadTheme(JURI::root().'components/com_models/assets/src/themes/classic/galleria.classic.js');
 
 	 // Initialize Galleria

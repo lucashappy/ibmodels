@@ -62,12 +62,12 @@ for($j=0;$j<10;$j++){
 
 
 </table>
- <div id="galleria">
+ <ul id="galleria">
 <?php 
           //  <img title="TESTE" src="images/fotos/<?echo$dados3[image]">         
           ?>
             GAleria;
- </div>
+ </ul>
  <script>
     
     // Load the classic theme
