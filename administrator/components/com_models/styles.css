@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+.modelPhotosThumb {
+	
+	width: 120px;
+	
+	padding: 3px;
+	margin: 5px;
+	border: 1px solid black;
+}

@@ -1,0 +1,77 @@
+INSERT INTO jos_components (name, link, admin_menu_link,
+admin_menu_alt, `option`, admin_menu_img, params)
+VALUES (`Models Gallery`, `option=com_models`,
+`option=com_models`, `Manage Models`, `com_models`,
+`js/ThemeOffice/component.png`, ``);
+
+INSERT INTO jos_components (name, link, admin_menu_link,
+admin_menu_alt, `option`, admin_menu_img, params)
+VALUES (`Models Gallery`, `option=com_models`,
+`option=com_models&controller=category`, `Manage Models`, `com_models`,
+`js/ThemeOffice/component.png`, ``);
+
+INSERT INTO `ibmodels_bd`.`jos_components` (
+`id` ,
+`name` ,
+`link` ,
+`menuid` ,
+`parent` ,
+`admin_menu_link` ,
+`admin_menu_alt` ,
+`option` ,
+`ordering` ,
+`admin_menu_img` ,
+`iscore` ,
+`params` ,
+`enabled`
+)
+VALUES (
+NULL , 'Models Gallery', 'option=com_models&controller=category', '0', '0', 'option=com_models&controller=category', 'Categories', 'com_models', '0', '', '0', '', '1'
+);
+
+
+/**Tabela de um Modelo **/
+
+DROP TABLE IF EXISTS jos_models;
+CREATE TABLE jos_models
+(
+`id` int(11) NOT NULL auto_increment,
+`category` int(1)NOT NULL,
+`published` tinyint(1) unsigned NOT NULL default 0,
+`name` varchar(255),
+`gender` char(1)NOT NULL,
+`age` int(3),
+`size` int(3),
+`height` int(3),
+`weight` int(3),
+`bust` int(3),
+`waist` int(3),
+`hips` int(3),
+`shoes` int(3),
+`eyes` varchar(30),
+`hair` varchar(30),
+FOREIGN KEY (`category`) REFERENCES jos_models_cat(`id`),
+PRIMARY KEY(`id`)
+)
+
+
+/** Links do menu Components*/
+
+INSERT INTO jos_components (name, parent, admin_menu_link, 
+                                 admin_menu_alt, ordering) 
+                    VALUES (`Manage Models`, 34, 
+ `option=com_models`, `Manage Models`, 1);
+ 
+ INSERT INTO jos_components (name, parent, admin_menu_link, 
+                                 admin_menu_alt, ordering) 
+                    VALUES (`Models Categories`, 34, 
+ `option=com_models&task=categories`, `Categories`, 1);
+ 
+ 
+DROP TABLE IF EXISTS jos_models_cat;
+CREATE TABLE jos_models_cat(`id` tinyint(1) NOT NULL auto_increment,`name` varchar(30),PRIMARY KEY(`id`));
+INSERT INTO jos_models_cat(id,name) VALUES(0,`Uncategorized`);
+
+
+
+
