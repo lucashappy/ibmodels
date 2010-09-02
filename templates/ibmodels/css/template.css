@@ -46,27 +46,41 @@ background:#ffffff url('../images/fundo.jpg') repeat-x center center;
 }
 
 #main {
-	position:absolute;
+	/*position:absolute;*/
 	width: 960px;
+	height: 500px;
 	margin-left: auto;
 	margin-right: auto;
 
 }
 
 #title h2{
-	margin-top:20px;
-	font-size: 5em;
+	/*position:relative;*/
+	padding-top:30px;
+	padding-left:20px;
+	font-size: 4em;
         color: black;
+	width:7em;
 
 }
 
+/*---------Imagem do Logo--------*/
+#logo{
+      position: absolute;
+      /*margin-left: 1010px;*/
+      margin-left:50px;
+      margin-top: 400px;
+      width:100px;
+      height:112px;
+}
+
 #mainmenu {
-	position:absolute;
+	/*position:absolute;*/
 	background-color: #ffffff;
 	font-size: large;
 	text-transform: uppercase;
 	padding: 5px;
-	margin: 120px 0px 0px 90px; 
+	margin: 110px 0px 0px 40px; 
 	width: 7em;
 	height: 16em;
 		
@@ -83,6 +97,13 @@ background:#ffffff url('../images/fundo.jpg') repeat-x center center;
 
 .item1 {
 visibility: hidden;
+}
+.menu a:hover{
+	color: purple;
+	text-decoration: none;
+}
+.item1{
+	display:none;
 }
 /*---------------------Itens de sub-menu -----------------*/
 
@@ -130,18 +151,23 @@ visibility: hidden;
 #fundo_conteudo{
 	position:absolute;
 	background-color: black;
-	margin: auto 250px;
-	margin-top:50px !important;
-	width: 780px;
-	height: 440px;
+	/*margin: auto 250px;*/
+	margin-left: 190px;
+	margin-top:-375px;
+	width: 740px;
+	height: 460px;
 	opacity: 0.7;
 
 }	
 
 #conteudo {
 	position:absolute;
-	width: 760px;
-	height: 440px;
+	/*margin: auto 250px;*/
+	margin-left: 190px;
+	margin-top:-375px;
+	/*position:absolute;*/
+	width: 720px;
+	height: 460px;
 	font-family:Verdana,Arial,sans-serif;
 	color:white;
 	padding-left:10px;
@@ -150,15 +176,20 @@ visibility: hidden;
 	overflow:hidden; 
 	text-align:justify;
 }
+#conteudo a:link{
+	color: green;
+}
+#conteudo a:visited{
+	color: gray;
+}
 
 /*--------------------Scroll---------------------------------------*/
 
 /* the action buttons above the scrollable */
 #actions {
-        margin-left: 250px;
-	width: 780px;
-	position:absolute;
-	margin-top: 550px;
+        margin-left: 800px;
+	/*position:absolute;*/
+	margin-top: 90px;
 }
 
 #actions a {
@@ -177,6 +208,6 @@ visibility: hidden;
 }
 
 .next {
-	float:right;
+      padding-left:20px;
 }	
 
