@@ -40,7 +40,8 @@ $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery-1.4.2.js');
 //$document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.tools.min.js');
 $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.scrollTo-1.4.2-min.js');
 $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.serialScroll-1.2.2-min.js');
-//$document->addScript($this->baseurl.'/templates/ibmodels/js/init.js');
+$document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.mousewheel.min.js');
+
 
 ?>
 
@@ -57,45 +58,40 @@ $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.serialScroll-
 
 <div id="main">
 
-<a id="title" href="index.php"><h2>IBMODELS</h2></a>
-<div id="mainmenu">
+	<a id="title" href="index.php"><h2>IBMODELS</h2></a>
+	<img id="logo" src="<?php echo $this->baseurl ?>/templates/ibmodels/images/logo_ibmodels.png" />
+        <div id="mainmenu">
 						
 						
 						
-						<?php if($this->countModules('menu')) : ?>
-							<jdoc:include type="modules" name="menu" style="rounded" />
-						<?php endif; ?>
+				<?php if($this->countModules('menu')) : ?>
+					<jdoc:include type="modules" name="menu" style="rounded" />
+				<?php endif; ?>
 					
 						
-						</div>
+	</div>
 
 
-<?php
-$menu = & JSite::getMenu();
-/*verifica se a pagina exibida não é a pagina principal*/
-if ($menu->getActive() != $menu->getDefault()) {
- ?>
-     <div id="fundo_conteudo" class="hasTip2">
-    <div id="conteudo">
-             <jdoc:include type="component" /> 
-    </div>
+	 <?php
+	    $menu = & JSite::getMenu();
+	      /*verifica se a pagina exibida não é a pagina principal*/
+	    if ($menu->getActive() != $menu->getDefault()) {
+	  ?>
+	  <div id="fundo_conteudo">
+	  </div>
+		  <div id="conteudo">
+			<jdoc:include type="component" /> 
+		  </div>
+	  
+	<div id="actions">
+	    <a class="prev">&laquo; Subir</a>
+
+	    <a class="next">Descer &raquo;</a>
+	</div>
+	<?  
+	    }
+	?>
 </div>
-</div>
-<div id="actions">
-	<a class="prev">&laquo; Subir</a>
-
-	<a class="next">Descer &raquo;</a>
-</div>
-<?  
-}
-?>
-
-
-
-
-<!-- javascript coding -->
-
-
 
 </body>
 </html>
