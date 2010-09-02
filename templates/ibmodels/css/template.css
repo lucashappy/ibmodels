@@ -78,6 +78,11 @@ background:#ffffff url('../images/fundo.jpg') repeat-x center center;
 
 .menu a{
 	color: black;
+	
+}
+
+.item1 {
+visibility: hidden;
 }
 /*---------------------Itens de sub-menu -----------------*/
 

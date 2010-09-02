@@ -32,13 +32,33 @@ $(function() {
         }
     );
 });
+$(document).ready(function(){
+    $(".prev").click(function(){
+      $("#conteudo").scrollTo(0);
+});
+});
+$(document).ready(function(){
+    $(".next").click(function(){
+      $("#conteudo").scrollTo('100%');
+});
+});
+
+$(function() {
+$("#conteudo").mousewheel(function(event, delta) {
+	if (delta > 0)
+		$("#conteudo").scrollTo( "-=10px", { axis:"y" } );
+	else if (delta < 0)
+		$("#conteudo").scrollTo( "+=10px", { axis:"y" } );
+});
+});
 
 /*--------------------Fade de carregamento da div conteudo------*/
 
 
-window.onload(function(){
+$(document).ready(function(){
       $.fx.off = false;
+      $("#fundo_conteudo").hide();
       $("#fundo_conteudo").fadeIn('slow', function () {
             $("#conteudo").fadeIn(100);
-          });
+      });
 });

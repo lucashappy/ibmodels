@@ -36,11 +36,12 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 
 $document =& JFactory::getDocument();
 $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery-1.4.2.js');
-//$document->addScript($this->baseurl.'/templates/ibmodels/js/mootools.js');
+
 //$document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.tools.min.js');
 $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.scrollTo-1.4.2-min.js');
 $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.serialScroll-1.2.2-min.js');
-//$document->addScript($this->baseurl.'/templates/ibmodels/js/init.js');
+$document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.mousewheel.min.js');
+$document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.tools.min.js');
 
 ?>
 
@@ -75,11 +76,12 @@ $menu = & JSite::getMenu();
 /*verifica se a pagina exibida não é a pagina principal*/
 if ($menu->getActive() != $menu->getDefault()) {
  ?>
-     <div id="fundo_conteudo" class="hasTip2">
+     <div id="fundo_conteudo">
+    
     <div id="conteudo">
              <jdoc:include type="component" /> 
     </div>
-</div>
+ </div>
 </div>
 <div id="actions">
 	<a class="prev">&laquo; Subir</a>
