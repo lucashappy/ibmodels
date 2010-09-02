@@ -36,11 +36,13 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 
 $document =& JFactory::getDocument();
 $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery-1.4.2.js');
-//$document->addScript($this->baseurl.'/templates/ibmodels/js/mootools.js');
+
 //$document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.tools.min.js');
 $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.scrollTo-1.4.2-min.js');
 $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.serialScroll-1.2.2-min.js');
 $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.mousewheel.min.js');
+$document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.mousewheel.min.js');
+$document->addScript($this->baseurl.'/components/com_models/assets/src/themes/classic/galleria.classic.js');
 
 
 ?>
@@ -69,6 +71,7 @@ $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.mousewheel.mi
 				<?php endif; ?>
 					
 						
+
 	</div>
 
 
@@ -91,6 +94,7 @@ $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.mousewheel.mi
 	<?  
 	    }
 	?>
+
 </div>
 
 </body>

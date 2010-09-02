@@ -28,24 +28,11 @@ function objectToArray($d) {
 
 <?php foreach($this->list as $l): ?>
 <div class="faceThumb" >
-<a href="#" onclick='showModelInfo("<?php echo implode("|", objectToArray($l));?>");'>
+<a href="#" onclick='showModelInfo("<?php echo implode("|", objectToArray($l));?>","<?php echo $l->photosURL;?>","<?php echo implode("|", objectToArray($l->photos));?>");'>
 <?php 
 
 ?>
-<img src="<?php echo $l->photosURL.'/face.jpg';?>" alt="<?php echo $l->name;?>" "/>
-<?php echo $l->name; ?>
-</a>
-
-</div>
-
-<?php endforeach; ?>
-<?php foreach($this->list as $l): ?>
-<div class="faceThumb" >
-<a href="#" onclick='showModelInfo("<?php echo implode("|", objectToArray($l));?>");'>
-<?php 
-
-?>
-<img src="<?php echo $l->photosURL.'/face.jpg';?>" alt="<?php echo $l->name;?>" />
+<img src="<?php echo $l->photosURL.'/face.jpg';?>" alt="<?php echo $l->name;?>" style="width: 150px;"/>
 <?php echo $l->name; ?>
 </a>
 
@@ -75,5 +62,11 @@ for($j=0;$j<10;$j++){
 
 
 </table>
+ <div id="galleria">
+<?php 
+          //  <img title="TESTE" src="images/fotos/<?echo$dados3[image]">         
+          ?>
+            GAleria;
+ </div>
 
 </div>

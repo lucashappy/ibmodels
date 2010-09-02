@@ -13,5 +13,21 @@ class ModelModelsAll extends JModel
     }
     return $this->_models;
   }
+  
+  function getModelPhotos($id){
+
+		 
+		jimport('joomla.environment.uri' );
+
+		global $option;
+        $path = JPATH_ROOT.DS.'images'.DS.'models' . DS . $id;
+		// get the files and folders in somefolder
+		$files= JFolder::files($path);
+
+		
+		return $files;
+
+	
+  }
 }
 ?>
