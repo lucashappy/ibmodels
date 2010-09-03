@@ -42,7 +42,7 @@ $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.scrollTo-1.4.
 $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.serialScroll-1.2.2-min.js');
 $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.mousewheel.min.js');
 $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.mousewheel.min.js');
-$document->addScript($this->baseurl.'/components/com_models/assets/src/themes/classic/galleria.classic.js');
+//$document->addScript($this->baseurl.'/templates/ibmodels/js/fancybox/jquery.fancybox-1.3.1.js');
 
 
 ?>

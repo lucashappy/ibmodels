@@ -62,3 +62,10 @@ $(document).ready(function(){
             $("#conteudo").fadeIn(100);
       });
 });
+
+/*-----------------------Reposicionamento do menu -------------------*/
+
+$(document).ready(function(){
+      $("#mainmenu").css("margin-top",function(){
+		return screen.height/2 - $("#mainmenu").height();} );
+});
