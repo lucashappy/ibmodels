@@ -59,19 +59,22 @@ background:#ffffff url('../images/fundo.jpg') repeat-x center center;
 	padding-left:20px;
 	font-size: 4em;
         color: black;
-	width:7em;
-	
-
+	width:7em;	
+}
+#title:hover{
+        text-decoration:none;
 }
 
 /*---------Imagem do Logo--------*/
 #logo{
       position: absolute;
       /*margin-left: 1010px;*/
-      margin-left:50px;
-      margin-top: 380px;
-      width:100px;
-      height:112px;
+    /*  margin-left:50px;
+      margin-top: 410px;*/
+      margin-left:840px;
+      margin-top: 25px;
+      width:70px;
+      height:82px;
       float:right;
 }
 
@@ -86,7 +89,7 @@ background:#ffffff url('../images/fundo.jpg') repeat-x center center;
 	background-color: #ffffff;
 	font-size: large;
 	text-transform: uppercase;
-	padding: 5px;
+	padding: 0px 5px 5px 5px;
 	margin: 0px 0px 0px 190px; 
 	width: 7em;
 	height: 14em;

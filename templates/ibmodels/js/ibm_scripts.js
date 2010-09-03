@@ -85,6 +85,9 @@ $(document).ready(function(){
 	      return $("#mainmenu").height();
       });
       $("#fundo_menu").css("margin-left", function(){
-	      return -($(window).width() /2 -$("#main").width()/2 -3);;
+	      return -($(window).width() /2 -$("#main").width()/2 -2);;
+      });
+    $("#fundo_menu").css("margin-top", function(){
+	      return $(window).height() /2 -$("#fundo_menu").height()/2 -$("#title").height();;
       });
 });
