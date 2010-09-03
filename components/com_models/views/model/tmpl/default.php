@@ -12,5 +12,13 @@ foreach ($params as $key){
 }
 echo'</table>';
 
+  $love = '{gallery}'.$this->model->id.'{/gallery}';
+        $dispatcher =& JDispatcher::getInstance();
+        $item->text =& $love;  
+        //$item->params = clone($params);
+       JPluginHelper::importPlugin('content'); 
+       $dispatcher->trigger('onPrepareContent', array (& $item, & $item->params, 0));
+       echo $love;
+
 ?>
 

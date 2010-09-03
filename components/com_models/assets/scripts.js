@@ -1,4 +1,5 @@
 
+
 function showModelInfo(data,url,photosNames){
 	
 	var kwicks = $$('.modelValue');
@@ -46,7 +47,7 @@ function showModelInfo(data,url,photosNames){
 }
 
 function galleryConstruct(){
-	var gall = document.getElementById("#galleria");
+	var gall = document.getElementById("galleria");
 	
 }
 
@@ -54,7 +55,7 @@ function hideModelInfo(){
  
 
 	 //var galeria = $$('#galleria img');
-	 var cell = document.getElementById("#galleria");
+	 var cell = document.getElementById("galleria");
 
 	 if ( cell.hasChildNodes() )
 	 {

@@ -1,0 +1,118 @@
+div.facebook .pp_top .pp_left
+{
+	background: url(sprite.png) -88px -53px no-repeat;
+}
+div.facebook .pp_top .pp_middle
+{
+	background: url(contentPatternTop.png) top left repeat-x;
+}
+div.facebook .pp_top .pp_right
+{
+	background: url(sprite.png) -110px -53px no-repeat;
+}
+div.facebook .pp_content .ppt
+{
+	color: #000;
+}
+div.facebook .pp_content_container .pp_left
+{
+	background: url(contentPatternLeft.png) top left repeat-y;
+}
+div.facebook .pp_content_container .pp_right
+{
+	background: url(contentPatternRight.png) top right repeat-y;
+}
+div.facebook .pp_content
+{
+	background: #fff;
+}
+div.facebook .pp_expand
+{
+	background: url(sprite.png) -31px -26px no-repeat;
+	cursor: pointer;
+}
+div.facebook .pp_expand:hover
+{
+	background: url(sprite.png) -31px -47px no-repeat;
+	cursor: pointer;
+}
+div.facebook .pp_contract
+{
+	background: url(sprite.png) 0 -26px no-repeat;
+	cursor: pointer;
+}
+div.facebook .pp_contract:hover
+{
+	background: url(sprite.png) 0 -47px no-repeat;
+	cursor: pointer;
+}
+div.facebook .pp_close
+{
+	background: url(sprite.png) -1px -1px no-repeat;
+	cursor: pointer;
+	height: 22px;
+	width: 22px;
+}
+div.facebook #pp_full_res .pp_inline
+{
+	color: #000;
+}
+div.facebook .pp_loaderIcon
+{
+	background: url(loader.gif) center center no-repeat;
+}
+div.facebook .pp_nav .pp_arrow_previous
+{
+	background: url(sprite.png) 0 -71px no-repeat;
+	height: 22px;
+	margin-top: 0;
+	width: 22px;
+}
+div.facebook .pp_arrow_previous.disabled
+{
+	background-position: 0 -96px;
+	cursor: default;
+}
+div.facebook .pp_nav .pp_arrow_next
+{
+	background: url(sprite.png) -32px -71px no-repeat;
+	height: 22px;
+	margin-top: 0;
+	width: 22px;
+}
+div.facebook .pp_arrow_next.disabled
+{
+	background-position: -32px -96px;
+	cursor: default;
+}
+div.facebook .pp_nav
+{
+	margin-top: 0;
+}
+div.facebook .pp_nav p
+{
+	font-size: 15px;
+	padding: 0 3px 0 4px;
+}
+div.facebook .pp_next:hover
+{
+	background: url(btnNext.png) center right no-repeat;
+	cursor: pointer;
+}
+div.facebook .pp_previous:hover
+{
+	background: url(btnPrevious.png) center left no-repeat;
+	cursor: pointer;
+}
+div.facebook .pp_bottom .pp_left
+{
+	background: url(sprite.png) -88px -80px no-repeat;
+}
+div.facebook .pp_bottom .pp_middle
+{
+	background: url(contentPatternBottom.png) top left repeat-x;
+}
+div.facebook .pp_bottom .pp_right
+{
+	background: url(sprite.png) -110px -80px no-repeat;
+}
