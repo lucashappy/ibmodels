@@ -79,12 +79,12 @@ $(document).ready(function(){
 
 $(document).ready(function(){
       $("#fundo_menu").css("width", function(){
-	      return $(window).width()- 10;
+	      return $(window).width()- 5;
       });
       $("#fundo_menu").css("height", function(){
 	      return $("#mainmenu").height();
       });
       $("#fundo_menu").css("margin-left", function(){
-	      return -($(window).width() /2 -$("#main").width()/2 );;
+	      return -($(window).width() /2 -$("#main").width()/2 -3);;
       });
 });
