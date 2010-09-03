@@ -1,0 +1,23 @@
+@CHARSET "ISO-8859-1";
+
+.oneModel {
+/*
+position:fixed;
+width: 100%;
+height: 100%;
+opacity: 0.5;
+background-color: black;
+top:0px;
+left:0px;*/
+
+}
+
+.vsig {
+	position: absolute;
+	top: 0px;
+}
+.modelInfo {
+ color: red;
+ z-index: 2000;
+
+}

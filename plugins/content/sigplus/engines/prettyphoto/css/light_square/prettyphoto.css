@@ -1,0 +1,67 @@
+div.light_square .pp_left ,div.light_square .pp_middle,div.light_square .pp_right,div.light_square .pp_content
+{
+	background: #fff;
+}
+div.light_square .pp_content .ppt
+{
+	color: #000;
+}
+div.light_square .pp_expand
+{
+	background: url(sprite.png) -31px -26px no-repeat;
+	cursor: pointer;
+}
+div.light_square .pp_expand:hover
+{
+	background: url(sprite.png) -31px -47px no-repeat;
+	cursor: pointer;
+}
+div.light_square .pp_contract
+{
+	background: url(sprite.png) 0 -26px no-repeat;
+	cursor: pointer;
+}
+div.light_square .pp_contract:hover
+{
+	background: url(sprite.png) 0 -47px no-repeat;
+	cursor: pointer;
+}
+div.light_square .pp_close
+{
+	background: url(sprite.png) -1px -1px no-repeat;
+	cursor: pointer;
+	height: 22px;
+	width: 22px;
+}
+div.light_square #pp_full_res .pp_inline
+{
+	color: #000;
+}
+div.light_square .pp_arrow_previous
+{
+	background: url(sprite.png) 0 -71px no-repeat;
+}
+div.light_square .pp_arrow_previous.disabled
+{
+	background-position: 0 -87px;
+	cursor: default;
+}
+div.light_square .pp_arrow_next
+{
+	background: url(sprite.png) -22px -71px no-repeat;
+}
+div.light_square .pp_arrow_next.disabled
+{
+	background-position: -22px -87px;
+	cursor: default;
+}
+div.light_square .pp_next:hover
+{
+	background: url(btnNext.png) center right no-repeat;
+	cursor: pointer;
+}
+div.light_square .pp_previous:hover
+{
+	background: url(btnPrevious.png) center left no-repeat;
+	cursor: pointer;
+}
