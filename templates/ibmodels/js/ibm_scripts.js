@@ -67,5 +67,5 @@ $(document).ready(function(){
 
 $(document).ready(function(){
       $("#mainmenu").css("margin-top",function(){
-		return $("#main").height()/2 - $("#mainmenu").height()/2 +10;} );
+		return $("#main").height()/2 - $("#mainmenu").height()/2;} );
 });
