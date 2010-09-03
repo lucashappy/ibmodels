@@ -62,6 +62,7 @@ $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.mousewheel.mi
 
 	<a id="title" href="index.php"><h2>IBMODELS</h2></a>
 	<img id="logo" src="<?php echo $this->baseurl ?>/templates/ibmodels/images/logo_ibmodels.png" />
+        <div id="fundo_menu">
         <div id="mainmenu">
 						
 						
@@ -73,8 +74,7 @@ $document->addScript($this->baseurl.'/templates/ibmodels/js/jquery.mousewheel.mi
 						
 
 	</div>
-
-
+	</div>
 	 <?php
 	    $menu = & JSite::getMenu();
 	      /*verifica se a pagina exibida não é a pagina principal*/

@@ -39,11 +39,11 @@ img { border: 0 none; }
 /*****************************************/
 /*** Template specific layout elements ***/
 /*****************************************/
-
+/*
 body {
 background:#ffffff url('../images/fundo.jpg') repeat-x center center;
 	
-}
+}*/
 
 #main {
 	/*position:absolute;*/
@@ -55,12 +55,12 @@ background:#ffffff url('../images/fundo.jpg') repeat-x center center;
 }
 
 #title h2{
-	/*position:relative;*/
 	padding-top:30px;
 	padding-left:20px;
 	font-size: 4em;
         color: black;
 	width:7em;
+	
 
 }
 
@@ -69,20 +69,28 @@ background:#ffffff url('../images/fundo.jpg') repeat-x center center;
       position: absolute;
       /*margin-left: 1010px;*/
       margin-left:50px;
-      margin-top: 400px;
+      margin-top: 380px;
       width:100px;
       height:112px;
+      float:right;
+}
+
+#fundo_menu{
+      background:#ffffff url('../images/fundo.jpg') repeat-x;
+      position:absolute;
+      margin: 80px 0px 0px 0px; 
 }
 
 #mainmenu {
-	/*position:absolute;*/
+	position:absolute;
 	background-color: #ffffff;
 	font-size: large;
 	text-transform: uppercase;
 	padding: 5px;
-	margin: 110px 0px 0px 40px; 
+	margin: 0px 0px 0px 190px; 
 	width: 7em;
-	height: 16em;
+	height: 14em;
+	float:left;
 		
 }
 
@@ -160,7 +168,7 @@ visibility: hidden;
 	background-color: black;
 	/*margin: auto 250px;*/
 	margin-left: 190px;
-	margin-top:-375px;
+	margin-top:20px;
 	width: 740px;
 	height: 460px;
 	opacity: 0.7;
@@ -171,8 +179,7 @@ visibility: hidden;
 	position:absolute;
 	/*margin: auto 250px;*/
 	margin-left: 190px;
-	margin-top:-375px;
-	/*position:absolute;*/
+	margin-top: 20px;
 	width: 720px;
 	height: 460px;
 	font-family:Verdana,Arial,sans-serif;
@@ -195,8 +202,8 @@ visibility: hidden;
 /* the action buttons above the scrollable */
 #actions {
         margin-left: 800px;
-	/*position:absolute;*/
-	margin-top: 90px;
+	position:absolute;
+	margin-top: 490px;
 }
 
 #actions a {

@@ -58,14 +58,33 @@ $("#conteudo").mousewheel(function(event, delta) {
 $(document).ready(function(){
       $.fx.off = false;
       $("#fundo_conteudo").hide();
+      $("#conteudo").hide();
       $("#fundo_conteudo").fadeIn('slow', function () {
             $("#conteudo").fadeIn(100);
       });
 });
 
 /*-----------------------Reposicionamento do menu -------------------*/
-
+/*
 $(document).ready(function(){
       $("#mainmenu").css("margin-top",function(){
-		return $("#main").height()/2 - $("#mainmenu").height()/2;} );
+		return $(window).height()/2 - $("#title").height() - $("#mainmenu").height()/2 -10;} );
+      $("#fundo_conteudo").css("margin-top",function(){
+		return $(window).height()/2 - $("#title").height() - $("#fundo_conteudo").height()/2 +10;} );
+      $("#conteudo").css("margin-top",function(){
+		return $(window).height()/2 - $("#title").height() - $("#conteudo").height()/2 +10;} );
+     $("#actions").css("margin-top",function(){
+		return $(window).height()/2 + $("#fundo_conteudo").height()/2 - $("#title").height()/2;} );
+ });*/
+
+$(document).ready(function(){
+      $("#fundo_menu").css("width", function(){
+	      return $(window).width()- 10;
+      });
+      $("#fundo_menu").css("height", function(){
+	      return $("#mainmenu").height();
+      });
+      $("#fundo_menu").css("margin-left", function(){
+	      return -($(window).width() /2 -$("#main").width()/2 );;
+      });
 });
