@@ -13,13 +13,12 @@
 
 .faceThumb img{
 	
-	
 	height: 150px;
 }
 
 #modelInfo{
 	background-color: black;
-	/*position:fixed;*/
+	position:fixed;
 	top:20%;
 	left:0;
 	width: 100%;
@@ -32,4 +31,10 @@
 .caracteristicas td+td{
 	
 	color: red;
+}
+
+#galleria img{
+      width:400px;
+      position:fixed;
+      top:20%;
 }
