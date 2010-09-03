@@ -32,7 +32,7 @@ a:hover {
 
 input.button { cursor: pointer; }
 
-p { margin-top: 0; margin-bottom: 5px; }
+p { margin-top: 0; margin-bottom: 5px; padding:5px;}
 
 img { border: 0 none; }
 
@@ -126,13 +126,15 @@ visibility: hidden;
 /*--------------------------Titulo dos topicos ----------*/
 .componentheading{
 	font-size: 26px !important;
-	padding-top: 10px !important;
-	padding-bottom: 20px !important;
+	padding-top: 20px !important;
+	padding-bottom: 25px !important;
+	font-family: BonvenoCFLight,Helvetica,Arial,sans-serif;
 }
 .contentheading{
-	font-size: 26px !important;
-	padding-top: 10px !important;
+	font-size: 30px !important;
+  padding-top: 20px !important;
 	padding-bottom: 20px !important;
+	font-family: BonvenoCFLight,Helvetica,Arial,sans-serif;
 }
 
 /*--lista de noticias--*/
@@ -143,9 +145,14 @@ visibility: hidden;
 /*---link dentro de uma noticia para voltar pra lista de noticias ----*/
 .contentpaneopen span{
       font-size: 16px !important;
+	  padding-top: 20px !important;
       padding-bottom: 20px !important;
       float: right;
  }
+ 
+ /*--------LINKS------------*/
+
+
 /*--------------------- Conteúdo -------------------------*/
 
 #fundo_conteudo{
@@ -177,7 +184,7 @@ visibility: hidden;
 	text-align:justify;
 }
 #conteudo a:link{
-	color: green;
+	color: #7b4ce3;;
 }
 #conteudo a:visited{
 	color: gray;
