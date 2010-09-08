@@ -90,4 +90,16 @@ $(document).ready(function(){
     $("#fundo_menu").css("margin-top", function(){
 	      return $(window).height() /2 -$("#fundo_menu").height()/2 -$("#title").height();;
       });
+      if(screen.height > 800){ function(){
+          /* $("#mainmenu").css("margin-top",function(){
+		return $(window).height()/2 - $("#title").height() - $("#mainmenu").height()/2 -10;} );*/
+	   $("#fundo_conteudo").css("margin-top",function(){
+		return $(window).height()/2 - $("#title").height() - $("#fundo_conteudo").height()/2 +10;} );
+	    $("#fundo_conteudo").css("margin-left",function(){
+		return -($(window).width()/2 + $("#mainmenu").width() - $("#fundo_conteudo").width()/2 +10);} );
+	   $("#conteudo").css("margin-top",function(){
+		return $(window).height()/2 - $("#title").height() - $("#conteudo").height()/2 +10;} );
+	   $("#actions").css("margin-top",function(){
+		return $(window).height()/2 + $("#fundo_conteudo").height()/2 - $("#title").height()/2;} );
+      }}
 });
