@@ -1,11 +1,11 @@
 /************************************************/
 /*cs3 - carregar a fonte do site ****************/
-
+/*
 @font-face{
    font-family:"BonvenoCFLight";
    src: url("http://www.ibrasiltv.com.br/ibmodels/templates/ibmodels/css/fonts/BonvenoCF-Light-webfont.eot"); /* para IE */
-   src: local("BonvenoCFLight"), url("http://www.ibrasiltv.com.br/ibmodels/templates/ibmodels/css/fonts/BonvenoCF-Light-webfont.ttf");
-} 
+  /* src: local("BonvenoCFLight"), url("http://www.ibrasiltv.com.br/ibmodels/templates/ibmodels/css/fonts/BonvenoCF-Light-webfont.ttf");
+} */
 
 /*****************************/
 /*** Core html setup stuff ***/
