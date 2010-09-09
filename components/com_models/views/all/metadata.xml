@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<view title="All">
+<message>
+<![CDATA[Shows all models.]]>
+</message>
+</view>
+<params>
+
+
+
+
+<param name="category" type="sql" default="1" label="Categoria" query="SELECT id, name FROM #__models_cat" key_field="id" value_field="name" />
+
+
+
+<param name="gender" type="radio" default="f" label="Gênero"
+description="Selecione o gênero dos modelos que deseje exibir">
+<option value="f">Feminino</option>
+<option value="m">Masculino</option>
+</param>
+
+</params>
+</metadata>
+
+ 
