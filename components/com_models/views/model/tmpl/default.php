@@ -2,18 +2,17 @@
 
 $params= array('age','size','weight','bust','waist','hips','shoes','eyes','hair');
 $params2= array('Idade','Tamanho','Peso','Busto/Peito','Cintura','Quadril','Sapatos','Olhos','Cabelo');
-?>
-<div class="oneModel"></div>
-<?php 
+
 //Shows models characteristics
-echo '<h1 class="modelInfo">'.$this->model->name.'</h1><table class="modelInfo">';
+echo '<div class="modelInfo">';
+echo '<h1>'.$this->model->name.'</h1><table>';
 $cont = 0;
 foreach ($params as $key){
 	echo'<tr><td align=right>'.$params2[$cont].'</td><td align=center>'.$this->model->$key.'</td></tr>';
     $cont++;
 }
 echo'</table>';
-
+echo '</div>';
   $love = '{gallery}'.$this->model->id.'{/gallery}';
         $dispatcher =& JDispatcher::getInstance();
         $item->text =& $love;  

@@ -91,7 +91,7 @@ $(document).ready(function(){
 	      return $(window).height() /2 -$("#fundo_menu").height()/2 -$("#title").height();;
       });
 
-      if(screen.height >= 800){
+      if($(window).height() > 600){
 	    var offset = $("#mainmenu").offset();
 	    var offset2 = $("#title").offset();
         /*   $("#fundo_conteudo").css("margin-top",function(){
