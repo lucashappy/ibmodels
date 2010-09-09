@@ -12,6 +12,7 @@ foreach ($params as $key){
     $cont++;
 }
 echo'</table>';
+echo '<a id="back" href="'.$this->backlink.'">Voltar</a>';
 echo '</div>';
   $love = '{gallery}'.$this->model->id.'{/gallery}';
         $dispatcher =& JDispatcher::getInstance();
