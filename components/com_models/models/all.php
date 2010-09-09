@@ -4,11 +4,13 @@ jimport( 'joomla.application.component.model' );
 class ModelModelsAll extends JModel
 {
   var $_models = null;
-  function getList()
+  function getList($category, $gender)
   {
     if(!$this->_models)
     {
-      $query = "SELECT * FROM #__models WHERE published = '1'";
+      $query = "SELECT * FROM #__models WHERE published = '1' AND category='".$category."' AND gender='".$gender."'";
+     // dump($query,'bd');
+      
       $this->_models = &$this->_getList($query, 0, 0);
     }
     return $this->_models;

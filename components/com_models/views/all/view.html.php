@@ -1,13 +1,25 @@
 <?php
 defined( '_JEXEC' ) or die( 'Restricted access' );
 jimport('joomla.application.component.view');
+jimport('joomla.application.menu');
+
 class ModelsViewAll extends JView
 {
   function display($tpl = null)
   {
     global $option;
+    
+    //Obter parâmetros de configuração
+    $menu =& JMenu::getInstance();
+//$item = $menu->getActive();
+dump($Systeminfo);
+//$params =& $menu->getParams(53);
+//$category= $params->get('category', '1');
+//$gender= $params->get('gender', 'f');
+
+    //obter modelo e acessar dados
     $model = &$this->getModel();
-    $list = $model->getList();
+    $list = $model->getList($category,$gender);
    
     for($i = 0; $i < count($list); $i++)
     {
@@ -31,7 +43,10 @@ $document->addScript(JURI::root().'components/com_models/assets/scripts.js');
 	//Galleria.loadTheme(JURI::root().'components/com_models/assets/src/themes/classic/galleria.classic.js');
 
 	 // Initialize Galleria
-   // $('#galleria').galleria();
+   // $('#galleria').galleria();$menu =& JMenu::getInstance();
+
+   
+
 
 
 JHTML::_( 'behavior.mootools' );

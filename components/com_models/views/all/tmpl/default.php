@@ -22,7 +22,7 @@ function objectToArray($d) {
 	}
 }
 
-
+/**
 if($this->id >0){
 
 $id = $this->id;
@@ -73,10 +73,10 @@ echo $love;?>
 <?php 
 
 }
-
+**/
 foreach($this->list as $l): ?>
 
-<div class="faceThumb"><a href="index.php?option=com_models&id=<?php echo $l->id;?>">
+<div class="faceThumb"><a href="index.php?option=com_models&view=model">
 <img src="<?php echo $l->photosURL.'/face.jpg';?>" alt="<?php echo $l->name;?>" style="width: 150px;"/>
 <?php echo $l->name; ?>
 </a> </div><?php endforeach; ?>
