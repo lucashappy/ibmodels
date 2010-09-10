@@ -26,7 +26,7 @@
         <th width="8%"><?php echo JText::_( 'SIZE' );?></th>
         <th width="8%"><?php echo JText::_( 'HEIGHT' );?></th>
         <th width="8%" nowrap="nowrap"><?php echo JText::_( 'Published' );?></th>
-        <th width="8%"><?php echo JText::_( 'Cat' );?></th>
+        <th width="8%"><?php echo JText::_( 'Photos' );?></th>
         </tr>            
     </thead>
     <?php
@@ -53,11 +53,11 @@
 			</td>
 			  <td>
 			   <a href="<?php echo $link; ?>">
-			   <img width="100" src="<?php echo  $photosURL.'images/models/'.$row->id.'/face.jpg'?>" 
-			   alt="<?php echo  $photosURL.'images/models/'.$row->id.'/face.jpg'?>"/>                
+			   <img src="<?php echo  $photosURL.'images/models/'.$row->id.'/thumbs/face.jpg'?>" 
+			   alt="<?php echo  $photosURL.'images/models/'.$row->id.'/thumbs/face.jpg'?>"/>                
                </a>
             </td>
-            <td>
+            <td align="center">
              <a href="<?php echo $link; ?>">
                <h2> <?php echo $row->name; ?></h2>
                 </a>
@@ -74,8 +74,10 @@
         <td align="center">
           <?php echo $published;?>
         </td>
-            <td>
-            <?php echo $row->category ?>
+            <td align="center">
+      
+         <h2> <a href="index.php?option=com_media&task=popupUpload&folder=models/<?php echo $row->id; ?>" >Edit Model Photos</a></h2></td>
+      
             </td>
         </tr>
         <?php

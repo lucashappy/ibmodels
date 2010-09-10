@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<install version="1.5" type="plugin" group="search">
+	<name>Search - Models</name>
+	<author>Hurricane Venus</author>
+	<creationDate>September 2010</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>ibrasiltv@gmail.com</authorEmail>
+	<authorUrl>www.ibrasiltv.com.br/ibmodels</authorUrl>
+	<version>1.5</version>
+	<description>Allows Searching of Models Component</description>
+	<files>
+		<filename plugin="models">models.php</filename>
+	</files>
+	<params>
+		<param name="limit" type="text" size="5" default="50" label="Search Limit" description="Number of Search items to return"/>
+	</params>
+</install>

@@ -7,7 +7,7 @@ $lists = $this->lists;
   
   
   
-  <form action="index.php" method="post" 
+  <form action="index.php" method="post" enctype="multipart/form-data"
                  name="adminForm" id="adminForm">
       <fieldset class="adminform">
         <legend>Details</legend>
@@ -157,17 +157,30 @@ $lists = $this->lists;
           <tr>
            <td width="100" align="right" class="key">
             
+        
+          Face Photo
+          <td  >
+             
+         
+   <input type="file" name="datafile" size="40" />
+
+
+ 
+        </tr>
+        <?php if(!$this->isNew) {?>
+          <tr>
+           <td width="100" align="right" class="key">
+            
           </td>
           
           <td  >
              
          
-         <h2> <a href="<?php
-                    echo $lists['editPhotos'];
-                ?>" >Edit Model Photos</a></h2></td>
+         <h2> <a href="index.php?option=com_media&task=popupUpload&folder=models/<?php echo $row->id; ?>" >Edit Model Photos</a></h2></td>
           <td>
  
         </tr>
+        <?php }?>
         </table>
       </fieldset>
 <input type="hidden" name="option" value="com_models" />

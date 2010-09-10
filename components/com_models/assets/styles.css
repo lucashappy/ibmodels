@@ -2,21 +2,30 @@
 
 .faceThumb {
 
-	border: 1px solid black;
+	border: 1px solid #7f7f7f;
 	padding: 3px;
 	margin: 5px; 
 	float: left; 
-	width: 150px; 
-	height: 170px;
+	width: 120px; 
+	height: 160px;
+	text-align: center;
+		font-family: BonvenoCFLight,Helvetica,Arial,sans-serif;
+	
 
 
 }
 
-.faceThumb img{
-	
-	
-	height: 150px;
+.faceThumb:hover{
+	border: 1px solid white;
 }
+
+.faceThumb h2{
+	color:white;
+	font-size: medium;
+	font-weight: lighter;
+	
+}
+
 
 #modelInfo{
 	

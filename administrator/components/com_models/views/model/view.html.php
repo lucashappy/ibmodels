@@ -43,6 +43,7 @@ class ModelsViewModel extends JView
 		$this->assignRef('lists',		$lists);
 		$this->assignRef( 'items', $model );
 		$this->assignRef( 'origin', $origin );
+		$this->assignRef( 'isNew', $isNew );
 
 
 		parent::display($tpl);

@@ -57,6 +57,7 @@ class ModelsControllerModel extends JController
 	 */
 	function save()
 	{
+		$post	= JRequest::get('post');
 		$model = $this->getModel('model');
 
 		if ($model->store($post)) {
@@ -68,7 +69,7 @@ class ModelsControllerModel extends JController
 		
 		$id = JRequest::getInt('id',  0, 'POST');
 		$folderPath = JPATH_ROOT. DS .'images'. DS.'models'.DS. $id;
-		//dump($folderPath,'folder');
+
 		if(JFolder::create($folderPath)){
 		JFolder::create($folderPath. DS . 'thumbs');
         $msg = $msg.' '.JText::_( 'Model Photos Folder Created' );
@@ -77,8 +78,12 @@ class ModelsControllerModel extends JController
         $msg = $msg.' '.JText::_( 'Error Creating Model Photos Folder' );
 
 	    $origin = JRequest::getInt('cat',  0, 'POST');
-	    		//		dumpSysinfo();
-		//dump($origin,'origin');
+	
+	
+
+	    $this->fileUp($id);
+	    
+	    
 		$redirect = 'index.php?option=com_models&cat='.$origin;
 		$this->setRedirect( $redirect, $msg );
 	}
@@ -100,7 +105,100 @@ class ModelsControllerModel extends JController
 		$redirect = 'index.php?option=com_models&cat='.$origin;
 		$this->setRedirect( $redirect, $msg );
 	}
+	
+	function fileUp($id){
+		
+	
+	    //lida com o arquivo da foto de rosto
+	 define ("MAX_SIZE","400");
 
+ $errors=0;
+ 
+ if($_SERVER["REQUEST_METHOD"] == "POST")
+ {
+        $image =$_FILES["datafile"]["name"];
+ $uploadedfile = $_FILES['datafile']['tmp_name'];
+
+  if ($image) 
+  {
+  $filename = stripslashes($_FILES['datafile']['name']);
+        $extension = $this->getExtension($filename);
+  $extension = strtolower($extension);
+ if (($extension != "jpg") && ($extension != "jpeg") 
+
+&& ($extension != "png") && ($extension != "gif")) 
+  {
+echo ' Unknown Image extension ';
+$errors=1;
+  }
+ else
+{
+   $size=filesize($_FILES['datafile']['tmp_name']);
+ 
+if ($size > MAX_SIZE*1024)
+{
+ echo "You have exceeded the size limit";
+ $errors=1;
+}
+ 
+if($extension=="jpg" || $extension=="jpeg" )
+{
+$uploadedfile = $_FILES['datafile']['tmp_name'];
+$src = imagecreatefromjpeg($uploadedfile);
+}
+else if($extension=="png")
+{
+$uploadedfile = $_FILES['datafile']['tmp_name'];
+$src = imagecreatefrompng($uploadedfile);
+}
+else 
+{
+$src = imagecreatefromgif($uploadedfile);
+}
+ 
+list($width,$height)=getimagesize($uploadedfile);
+
+
+$newwidth1=120;
+$newheight1=120;
+$tmp1=imagecreatetruecolor($newwidth1,$newheight1);
+
+if($width >= $height){
+	$width = $height;
+}
+else{
+	$height = $width;
+}
+
+
+
+imagecopyresized($tmp1,$src,0,0,0,0,$newwidth1,$newheight1, 
+
+$width,$height);
+
+
+$filename1 = JPATH_SITE.DS.'images'.DS.'models'.DS.$id.DS."thumbs".DS.'face.jpg';
+
+
+imagejpeg($tmp1,$filename1,100);
+
+imagedestroy($src);
+imagedestroy($tmp1);
+}
+}
+}
+
+ 
+	}
+function getExtension($str) {
+
+         $i = strrpos($str,".");
+         if (!$i) { return ""; } 
+
+         $l = strlen($str) - $i;
+         $ext = substr($str,$i+1,$l);
+         return $ext;
+ }
 	/**
 	 * cancel editing a record
 	 * @return void

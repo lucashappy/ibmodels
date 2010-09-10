@@ -77,6 +77,6 @@ echo $love;?>
 foreach($this->list as $l): ?>
 
 <div class="faceThumb"><a href="index.php?option=com_models&view=model&id=<?php echo $l->id;?>">
-<img src="<?php echo $l->photosURL.'/face.jpg';?>" alt="<?php echo $l->name;?>" style="width: 150px;"/>
-<?php echo $l->name; ?>
+<img src="<?php echo $l->photosURL.'/thumbs/face.jpg';?>" alt="<?php echo $l->name;?>" />
+<h2><?php echo $l->name; ?></h2>
 </a> </div><?php endforeach; ?>

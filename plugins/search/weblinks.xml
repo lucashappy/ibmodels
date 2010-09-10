@@ -12,7 +12,5 @@
 	<files>
 		<filename plugin="weblinks">weblinks.php</filename>
 	</files>
-	<params>
-		<param name="search_limit" type="text" size="5" default="50" label="Search Limit" description="Number of Search items to return"/>
-	</params>
+	
 </install>
