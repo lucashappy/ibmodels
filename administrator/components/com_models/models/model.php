@@ -181,6 +181,20 @@ function getLists(){
 		return true;
 	}
 
+	function publish($publish)
+	{	
+		
+
+		$cid = JRequest::getVar( 'cid', array(), '', 'array' );
+
+		
+		
+
+$row =& $this->getTable('Model');
+$row->publish($cid, $publish);
+		return true;
+	}
+	
 	/**
 	 * Method to delete record(s)
 	 *

@@ -22,6 +22,7 @@ class ModelsControllerModel extends JController
 
 		// Register Extra tasks
 		$this->registerTask( 'add'  , 	'edit' );
+				$this->registerTask( 'unpublish', 'publish' );
 	}
 	
 	/**
@@ -199,6 +200,23 @@ function getExtension($str) {
          $ext = substr($str,$i+1,$l);
          return $ext;
  }
+ 
+ function publish()
+{
+//global $option;
+if( $this->_task == 'publish')
+{
+$publish = 1;
+}
+else
+{
+$publish = 0;
+}
+$model = $this->getModel('model');
+$model->publish($publish);
+$this->setRedirect( 'index.php?option=com_models' );
+}
+
 	/**
 	 * cancel editing a record
 	 * @return void
