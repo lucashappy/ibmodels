@@ -112,6 +112,6 @@ $(document).ready(function(){
                 var off3 = $("#fundo_conteudo").offset();
 		return off3.top + $("#fundo_conteudo").height() - $("#actions").height()-10; } );
 	    $(".modelInfo").css("margin-left", function(){
-		return -120;});
+		return -($("#fundo_conteudo").width()/6);});
        }
 });
